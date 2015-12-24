@@ -1,0 +1,59 @@
+\documentclass{article}
+% Formatting packages
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{subfig}
+\usepackage{graphicx}
+% Notation Packages
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{flushend}
+\usepackage[numbers]{natbib}
+\newcommand{\carl}[1]{\textcolor{red}{#1}}
+\newcommand{\nakul}[1]{\textcolor{green}{#1}}
+\newcommand{\dilip}[1]{\textcolor{blue}{#1}}
+
+%Title, etc. info
+\title{
+ Feature Representation in Inverse Reinforcement Learning\\
+  CSCI2951F Final Project
+  }
+\author{
+  Dilip Arumugam \hspace{10mm}
+  %\and
+  Nakul Gopalan\\
+  %\and
+  Jun Ki Lee \hspace{20mm}
+  %\and
+  Carl Trimbach\\
+  %\and
+  }
+\date{December 17, 2015}
+
+\begin{document}
+\maketitle
+
+\pagebreak
+
+%Motivation
+\input{motivation}
+%Algorithms
+%%MaxEnt / MaxEnt-LP
+\input{maxent}
+%% FIRL
+\input{firl}
+%% BNPIRL GPIRL
+\input{bnpgp}
+% Domain
+\input{domain}
+% Experiments
+\input{experiments}
+% Discussion
+\input{discussion}
+
+\footnotesize
+\bibliographystyle{plain}
+\bibliography{irl}
+
+\end{document}
