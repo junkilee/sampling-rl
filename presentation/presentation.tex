@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+\mode<presentation> {
+\usetheme{Madrid}
+\usecolortheme{crane}
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{footline}[page number]
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+
+\usepackage{tikz}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Short Title]{Bayesian Sampling Approach in \\ Reinforcement Learning\\\small Research Comp} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{ Jun Ki Lee } % Your name
+\institute[Brown CS] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Brown University \\ % Your institution for the title page
+}
+\date{02/01/2016} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%%------------------------------------------------
+%\begin{frame}
+%\frametitle{Overview} 
+%\tableofcontents 
+%\end{frame}
+\section{Motivation}
+%%------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{What is IRL?}
+\begin{itemize}
+\item IRL is the process of consuming behavior and an environment to produce a reward function.
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Why IRL?}
+\begin{itemize}
+\item Reward functions can be hard to describe, or unknown. 
+\begin{itemize}
+\item complex structure
+\item reproducing human behavior
+\end{itemize}
+\item Expert demonstration might be cheaper or more readily available.
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%
+
+\end{document} 
